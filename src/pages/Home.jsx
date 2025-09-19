@@ -1,4 +1,7 @@
-import Ishy from "../assets/images/ishy_profile.svg";
+import Ishy_profile from "../assets/images/ishy_profile.svg";
+import ProjectCard from "../components/ProjectCard";
+import PrimaryCTAButton from "../components/PrimaryCTAButton";
+import SecondaryCTAButton from "../components/SecondaryCTAButton";
 
 function Hero() {
   return (
@@ -21,22 +24,17 @@ function Hero() {
             about building delightful, tech-inspired web experiences that
             everyone can use.
           </p>
-          <a
-            href=""
-            className="font-semibold h-full w-auto py-2 px-4 rounded-2xl bg-sky-600 text-sky-100 hover:bg-sky-500 mr-5"
-          >
-            More about me
-          </a>
-          <a
-            href=""
-            className="font-semibold h-full w-auto py-2 px-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/20 shadow-lg text-sky-100 hover:bg-fuchsia-500"
-          >
-            Download CV
-          </a>
+          {/* CTA Buttons -----------> */}
+          <PrimaryCTAButton resourceLink={""} text={"More about me"} />
+          <SecondaryCTAButton resourceLink={""} text={"Download CV"} />
         </article>
         <article className="w-full md:w-[45%] lg:w-[25%] mx-auto relative text-sky-500 mt-20">
           <div className="w-72 h-72 md:w-86 md:h-86 lg:w-94 lg:h-94 mx-auto rounded-full border border-sky-100 border-4 bg-sky-50/10 overflow-hidden">
-            <img src={Ishy} alt="Ishy" className="h-96 mx-auto object-cover" />
+            <img
+              src={Ishy_profile}
+              alt="Ishy"
+              className="h-96 mx-auto object-cover"
+            />
           </div>
         </article>
       </section>
@@ -48,89 +46,12 @@ function Hero() {
           <p className="text-left">
             Allow me to introduce you to some of my recent projects.
           </p>
-          <a
-            href=""
-            className="font-semibold h-full w-auto py-2 px-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/20 shadow-lg text-sky-100 hover:bg-fuchsia-500"
-          >
-            See more
-          </a>
+          <SecondaryCTAButton resourceLink={""} text={"See more"} />
         </div>
         <div className="flex flex-wrap gap-6 items-center justify-center my-4">
-          {/* //------- Card ----> */}
-          <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-white/20 p-3 animate-pulse">
-            <img
-              src=""
-              alt=""
-              className="w-full h-[200px] bg-gray-500/50 rounded-2xl mb-4"
-            />
-            <h4 className="oxanium-font text-xl text-left bg-gray-500/50 rounded-2xl">
-              Project in Construction
-            </h4>
-            <p className="text-left my-3 text-base bg-gray-500/50 rounded-2xl">
-              Project Description
-            </p>
-            <ul className="flex flex-wrap items-center justify-start">
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 1
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 2
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 3
-              </li>
-            </ul>
-          </div>
-          {/* //------- Card ----> */}
-          <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-white/20 p-3 animate-pulse">
-            <img
-              src=""
-              alt=""
-              className="w-full h-[200px] bg-gray-500/50 rounded-2xl mb-4"
-            />
-            <h4 className="oxanium-font text-xl text-left bg-gray-500/50 rounded-2xl">
-              Project in Construction
-            </h4>
-            <p className="text-left my-3 text-base bg-gray-500/50 rounded-2xl">
-              Project Description
-            </p>
-            <ul className="flex flex-wrap items-center justify-start">
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 1
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 2
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 3
-              </li>
-            </ul>
-          </div>
-          {/* //------- Card ----> */}
-          <div className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] rounded-2xl border border-white/20 p-3 animate-pulse">
-            <img
-              src=""
-              alt=""
-              className="w-full h-[200px] bg-gray-500/50 rounded-2xl mb-4"
-            />
-            <h4 className="oxanium-font text-xl text-left bg-gray-500/50 rounded-2xl">
-              Project in Construction
-            </h4>
-            <p className="text-left my-3 text-base bg-gray-500/50 rounded-2xl">
-              Project Description
-            </p>
-            <ul className="flex flex-wrap items-center justify-start">
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 1
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 2
-              </li>
-              <li className="m-1 rounded-2xl border border-white/20 text-[12px] bg-gray-500/50 rounded-2xl">
-                Technology 3
-              </li>
-            </ul>
-          </div>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </section>
       <section className="py-20">
@@ -142,18 +63,8 @@ function Hero() {
           something great.
         </p>
         <div className="flex flex-wrap items-center justify-center">
-          <a
-            href=""
-            className="font-semibold h-full w-auto py-2 px-4 rounded-2xl bg-sky-600 text-sky-100 hover:bg-sky-500 mr-5"
-          >
-            Get in touch
-          </a>
-          <a
-            href=""
-            className="font-semibold h-full w-auto py-2 px-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/20 shadow-lg text-sky-100 hover:bg-fuchsia-500"
-          >
-            Check my skills
-          </a>
+          <PrimaryCTAButton resourceLink={""} text={"Get in touch"} />
+          <SecondaryCTAButton resourceLink={""} text={"Check my skills"} />
         </div>
       </section>
     </main>

@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Home";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
         </p>
       </div>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <Contact />
       <Footer />
     </div>
   );
