@@ -1,4 +1,3 @@
-import Ishy from "../assets/images/ishy.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareGithub,
