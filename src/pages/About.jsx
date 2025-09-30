@@ -283,9 +283,13 @@ function About() {
       </section>
       <section className="mt-10">
         <div className="flex flex-col md:flex-row justify-center items-center ">
-          <PrimaryCTAButton resourceLink={""} text={"Get in touch with me"} />
+          <PrimaryCTAButton
+            resourceLink={"/contact"}
+            text={"Get in touch with me"}
+          />
+
           <SecondaryCTAButton
-            resourceLink={""}
+            resourceLink={"/projects"}
             text={"Check out my projects"}
           />
         </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/images/logo_ishy_braces.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,9 @@ function Navbar() {
     <>
       <div className="bg-sky-50/50"></div>
       <nav className="flex flex-wrap items-center justify-between text-gray-400 font-semibold rounded-2xl py-2.5 px-5 backdrop-blur-md bg-white/5 border border-white/20 shadow-lg">
-        <a href="">
+        <Link to="/">
           <img src={logo} alt="Ishy" className="w-auto h-6" />
-        </a>
+        </Link>
 
         {/* Hamburger Button */}
         <button
@@ -45,38 +46,43 @@ function Navbar() {
           } w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="flex flex-col md:flex-row">
-            <li>
-              <a href="" className="block hover:text-sky-100 px-5 py-2 md:py-0">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="" className="block hover:text-sky-100 px-5 py-2 md:py-0">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="" className="block hover:text-sky-100 px-5 py-2 md:py-0">
-                Projects
-              </a>
-            </li>
-          </ul>
-          <a
-            href=""
+          <div className="flex flex-col md:flex-row">
+            <Link
+              to="/about"
+              className="block hover:text-sky-100 px-5 py-2 md:py-0"
+            >
+              About
+            </Link>
+
+            <Link
+              to="/skills"
+              className="block hover:text-sky-100 px-5 py-2 md:py-0"
+            >
+              Skills
+            </Link>
+
+            <Link
+              to="/projects"
+              className="block hover:text-sky-100 px-5 py-2 md:py-0"
+            >
+              Projects
+            </Link>
+          </div>
+          <Link
+            to="/contact"
             className="block md:hidden h-full w-auto py-2 px-4 rounded-2xl bg-sky-600 text-sky-100 hover:bg-sky-500 mt-2"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Contact Button for Desktop */}
-        <a
-          href=""
+        <Link
+          to="/contact"
           className="hidden md:block h-full w-auto py-2 px-4 rounded-2xl bg-sky-600 text-sky-100 hover:bg-sky-500"
         >
           Contact
-        </a>
+        </Link>
       </nav>
     </>
   );

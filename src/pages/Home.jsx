@@ -25,8 +25,13 @@ function Hero() {
             everyone can use.
           </p>
           {/* CTA Buttons -----------> */}
-          <PrimaryCTAButton resourceLink={""} text={"More about me"} />
-          <SecondaryCTAButton resourceLink={""} text={"Download CV"} />
+
+          <PrimaryCTAButton resourceLink={"/about"} text={"More about me"} />
+
+          <SecondaryCTAButton
+            resourceLink={"/skills"}
+            text={"Check my skills"}
+          />
         </article>
         <article className="w-full md:w-[45%] lg:w-[25%] mx-auto relative text-sky-500 mt-20">
           <div className="w-72 h-72 md:w-86 md:h-86 lg:w-94 lg:h-94 mx-auto rounded-full border border-sky-100 border-4 bg-sky-50/10 overflow-hidden">
@@ -46,7 +51,7 @@ function Hero() {
           <p className="text-left">
             Allow me to introduce you to some of my recent projects.
           </p>
-          <SecondaryCTAButton resourceLink={""} text={"See more"} />
+          <SecondaryCTAButton resourceLink={"/projects"} text={"See more"} />
         </div>
         <div className="flex flex-wrap gap-6 items-center justify-center my-4">
           <ProjectCard />
@@ -63,8 +68,12 @@ function Hero() {
           something great.
         </p>
         <div className="flex flex-wrap items-center justify-center">
-          <PrimaryCTAButton resourceLink={""} text={"Get in touch"} />
-          <SecondaryCTAButton resourceLink={""} text={"Check my skills"} />
+          <PrimaryCTAButton resourceLink={"/contact"} text={"Get in touch"} />
+
+          <SecondaryCTAButton
+            resourceLink={"/skills"}
+            text={"Check my skills"}
+          />
         </div>
       </section>
     </main>

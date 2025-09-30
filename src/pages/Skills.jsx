@@ -22,7 +22,10 @@ function Skills() {
           <h2 className="text-xl font-bold p-4">{category.category}</h2>
           <div className="flex flex-wrap justify-center p-4">
             {category.items.map((tech) => (
-              <div key={tech.name} className="flex flex-col m-2">
+              <div
+                key={tech.name}
+                className="flex flex-col m-2 hover:text-sky-500"
+              >
                 <DevIcon
                   iconName={tech.iconName}
                   color={tech.color}
