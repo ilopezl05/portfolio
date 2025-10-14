@@ -30,13 +30,19 @@ let projectsData = [
     status: "Completed",
     completionDate: "2024-01-15",
 
-    technologies: ["React", "Tailwind CSS", "JavaScript", "React Router"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "React Router",
+      "GitHub Actions",
+    ],
 
     // Categorize technologies
     techCategories: {
       frontend: ["React", "Tailwind CSS", "JavaScript"],
       routing: ["React Router"],
-      deployment: ["Vercel"], // Add if applicable
+      deployment: ["GitHub Actions"],
     },
 
     highlights: [
