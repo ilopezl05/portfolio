@@ -30,6 +30,5 @@ jobs:
           username: ${{ secrets.NAMECHEAP_USERNAME }}
           password: ${{ secrets.NAMECHEAP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /public_html/
           protocol: ftp
           port: 21
