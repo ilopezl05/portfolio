@@ -8,6 +8,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { FormspreeProvider } from "@formspree/react";
 
 function App() {
   return (

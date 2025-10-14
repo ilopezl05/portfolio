@@ -5,7 +5,7 @@ import SecondaryCTAButton from "../components/SecondaryCTAButton";
 
 function Hero() {
   return (
-    <main className="py-20">
+    <main className="my-20">
       <section className="flex flex-wrap py-20">
         <article className="text-left w-full md:w-[45%] lg:w-[60%]">
           <div className="border-2 rounded-2xl px-3 py-1 w-fit">
@@ -54,8 +54,6 @@ function Hero() {
           <SecondaryCTAButton resourceLink={"/projects"} text={"See more"} />
         </div>
         <div className="flex flex-wrap gap-6 items-center justify-center my-4">
-          <ProjectCard />
-          <ProjectCard />
           <ProjectCard />
         </div>
       </section>

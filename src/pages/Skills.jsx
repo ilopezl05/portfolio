@@ -3,7 +3,7 @@ import DevIcon from "../components/DevIcon";
 
 function Skills() {
   return (
-    <main className="skills-page">
+    <main className="skills-page mb-20">
       <div className="flex flex-col md:flex-row container mx-auto py-20 px-4 gap-4 ">
         <h1 className="w-full h-full md:w-1/2 oxanium-font text-3xl md:text-5xl text-left">
           Skills & Technologies
