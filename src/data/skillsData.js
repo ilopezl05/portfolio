@@ -37,7 +37,6 @@ const skills = [
       { name: "Node.js", iconName: "nodejs", color: "plain" },
       { name: "Express.js", iconName: "express", color: "original" },
       { name: "Flask", iconName: "flask", color: "original" },
-      { name: "Spring", iconName: "spring", color: "original" },
     ],
   },
   {
@@ -55,16 +54,12 @@ const skills = [
       { name: "PostgreSQL", iconName: "postgresql", color: "plain" },
       { name: "MongoDB", iconName: "mongodb", color: "plain" },
       { name: "SQLite", iconName: "sqlite", color: "plain" },
-      { name: "Redis", iconName: "redis", color: "plain" },
-      { name: "Firebase", iconName: "firebase", color: "plain" },
     ],
   },
   {
     category: "Cloud Platforms & DevOps",
     items: [
       { name: "AWS", iconName: "amazonwebservices", color: "plain" },
-      { name: "Google Cloud", iconName: "googlecloud", color: "plain" },
-      { name: "Microsoft Azure", iconName: "azure", color: "plain" },
       { name: "Docker", iconName: "docker", color: "plain" },
       { name: "Kubernetes", iconName: "kubernetes", color: "plain" },
     ],
@@ -94,11 +89,7 @@ const skills = [
   {
     category: "Testing & Quality Assurance",
     items: [
-      { name: "Jest", iconName: "jest", color: "plain" },
-      { name: "Cypress", iconName: "cypress", color: "plain" },
       { name: "Selenium", iconName: "selenium", color: "original" },
-      { name: "Mocha", iconName: "mocha", color: "plain" },
-      { name: "Jasmine", iconName: "jasmine", color: "plain" },
       { name: "Pytest", iconName: "pytest", color: "plain" },
       { name: "JUnit", iconName: "junit", color: "plain" },
     ],
@@ -124,11 +115,8 @@ const skills = [
   {
     category: "Data Science & Machine Learning",
     items: [
-      { name: "TensorFlow", iconName: "tensorflow", color: "original" },
-      { name: "PyTorch", iconName: "pytorch", color: "original" },
       { name: "Pandas", iconName: "pandas", color: "plain" },
       { name: "NumPy", iconName: "numpy", color: "plain" },
-      { name: "Scikit-learn", iconName: "scikitlearn", color: "plain" },
       { name: "Jupyter", iconName: "jupyter", color: "plain" },
       { name: "Matplotlib", iconName: "matplotlib", color: "plain" },
       { name: "OpenCV", iconName: "opencv", color: "plain" },
@@ -138,7 +126,6 @@ const skills = [
     category: "API Development & Testing",
     items: [
       { name: "REST APIs", iconName: "json", color: "plain" },
-      { name: "GraphQL", iconName: "graphql", color: "plain" },
       { name: "Postman", iconName: "postman", color: "plain" },
     ],
   },

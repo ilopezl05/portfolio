@@ -106,8 +106,8 @@ function Contact() {
               placeholder="e.g. John Doe"
               className="border border-sky-50/30 rounded-2xl px-3 py-2 focus:border-sky-400 mb-6"
             />
+            {/* TODO: Style errors to fit the theme */}
             <ValidationError prefix="Name" field="name" errors={state.errors} />
-
             <label htmlFor="email" className="text-left">
               E-mail address:
             </label>
@@ -124,7 +124,6 @@ function Contact() {
               field="email"
               errors={state.errors}
             />
-
             <label htmlFor="message" className="text-left">
               Message:
             </label>

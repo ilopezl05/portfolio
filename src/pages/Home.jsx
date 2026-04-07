@@ -25,9 +25,8 @@ function Hero() {
             everyone can use.
           </p>
           {/* CTA Buttons -----------> */}
-
+          {/* TODO: Buttons are not wrapping properly on smaller screens */}
           <PrimaryCTAButton resourceLink={"/about"} text={"More about me"} />
-
           <SecondaryCTAButton
             resourceLink={"/skills"}
             text={"Check my skills"}
@@ -54,6 +53,7 @@ function Hero() {
           <SecondaryCTAButton resourceLink={"/projects"} text={"See more"} />
         </div>
         <div className="flex flex-wrap gap-6 items-center justify-center my-4">
+          {/* TODO: Fix issue with image not showing up in ProjectCard */}
           <ProjectCard />
         </div>
       </section>
